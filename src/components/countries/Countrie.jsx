@@ -1,3 +1,4 @@
+import { Link, useNavigate } from 'react-router-dom';
 import {
 	StyledCapital,
 	StyledContainer,
@@ -8,9 +9,12 @@ import {
 	StyledContainerInfo
 } from './styles';
 
-const Countrie = ({ name, flag, population, region, capital }) => {
+const Countrie = ({ data, name, flag, population, region, capital }) => {
+	const navigate = useNavigate();
 	return (
-		<StyledContainer>
+		<StyledContainer
+			onClick={() => navigate('/countryDetails/', { state: data })}
+		>
 			<StyledFlag src={flag} alt='' />
 			<StyledContainerInfo>
 				<StyledName>{name}</StyledName>

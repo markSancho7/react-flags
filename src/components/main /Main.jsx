@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import Countrie from '../countries/Countrie';
 import Filters from '../filters/Filters';
+import { StyledGrid } from './styles';
 
 const Main = () => {
 	const [countries, setCountries] = useState([]);
@@ -30,6 +31,7 @@ const Main = () => {
 					population={country.population}
 					region={country.region}
 					capital={country.capital}
+					data={country}
 				/>
 			))}
 		</>

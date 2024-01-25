@@ -17,15 +17,22 @@ const StyledName = styled.p`
 	font-style: normal;
 	font-weight: 800;
 	line-height: 26px;
+	color: white;
 `;
 
 const StyledFlag = styled.img``;
 
-const StyledPopulation = styled.p``;
+const StyledPopulation = styled.p`
+	color: white;
+`;
 
-const StyledRegion = styled.p``;
+const StyledRegion = styled.p`
+	color: white;
+`;
 
-const StyledCapital = styled.p``;
+const StyledCapital = styled.p`
+	color: white;
+`;
 
 export {
 	StyledContainer,

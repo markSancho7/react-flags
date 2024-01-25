@@ -1,5 +1,4 @@
 import { BrowserRouter } from 'react-router-dom';
-import Main from './components/main /Main';
 import Router from './router/Router';
 
 const App = () => {
@@ -8,7 +7,6 @@ const App = () => {
 			<BrowserRouter>
 				<Router />
 			</BrowserRouter>
-			<Main />
 		</>
 	);
 };
