@@ -1,8 +1,8 @@
 import { Link, useLocation } from 'react-router-dom';
 
 const CountryDetails = () => {
-	const { state } = useLocation();
-	console.log(state);
+	const { state: country } = useLocation();
+	console.log(country);
 	return (
 		<div>
 			<div>
@@ -11,19 +11,19 @@ const CountryDetails = () => {
 				</Link>
 			</div>
 			<div>
-				<p>{state.name.common}</p>
-				<p>Population:{state.population}</p>
-				<p>Region: {state.continents}</p>
-				<p>Sub Region: {state.subregion}</p>
-				<p>Capital: {state.capital}</p>
+				<p>{country.name.common}</p>
+				<p>Population:{country.population}</p>
+				<p>Region: {country.continents}</p>
+				<p>Sub Region: {country.subregion}</p>
+				<p>Capital: {country.capital}</p>
 			</div>
 			<div>
-				<p>Top Level Domain:{[...state.tld].join(' ')}</p>
-				<p>Currencies: {[...Object.keys(state.currencies)]} </p>
-				<p>Languages:{[...Object.keys(state.languages)].join(' ')}</p>
+				<p>Top Level Domain:{[...country.tld].join(' ')}</p>
+				<p>Currencies: {[...Object.keys(country.currencies)]} </p>
+				<p>Languages:{[...Object.keys(country.languages)].join(' ')}</p>
 				<p>
 					Borders:
-					{state?.borders?.map(border => (
+					{country.borders?.map(border => (
 						<p key={border}>{border}</p>
 					))}
 				</p>

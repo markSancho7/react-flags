@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import Countrie from '../countries/Countrie';
+import Country from '../country/Country';
 import Filters from '../filters/Filters';
 import { StyledGrid } from './styles';
 
@@ -23,17 +23,19 @@ const Main = () => {
 				currentCountry={event => changeNameCountry(event, setCurrentCountry)}
 				currentRegion={event => changeRegion(event, setCurrentRegion)}
 			></Filters>
-			{filteredCountries.map(country => (
-				<Countrie
-					key={country.name.common}
-					name={country.name.common}
-					flag={country.flags.svg}
-					population={country.population}
-					region={country.region}
-					capital={country.capital}
-					data={country}
-				/>
-			))}
+			<StyledGrid>
+				{filteredCountries.map(country => (
+					<Country
+						key={country.name.common}
+						name={country.name.common}
+						flag={country.flags.svg}
+						population={country.population}
+						region={country.region}
+						capital={country.capital}
+						data={country}
+					/>
+				))}
+			</StyledGrid>
 		</>
 	);
 };

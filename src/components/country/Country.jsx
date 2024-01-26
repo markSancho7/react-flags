@@ -9,7 +9,7 @@ import {
 	StyledContainerInfo
 } from './styles';
 
-const Countrie = ({ data, name, flag, population, region, capital }) => {
+const Country = ({ data, name, flag, population, region, capital }) => {
 	const navigate = useNavigate();
 	return (
 		<StyledContainer
@@ -25,4 +25,4 @@ const Countrie = ({ data, name, flag, population, region, capital }) => {
 		</StyledContainer>
 	);
 };
-export default Countrie;
+export default Country;
