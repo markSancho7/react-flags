@@ -2,8 +2,8 @@ import { styled } from 'styled-components';
 
 const StyledContainer = styled.div`
 	width: 264px;
-	height: 370px;
-	box-shadow: 0px 0px 10px 0px grey;
+	height: 400px;
+	background-color: #2b3844;
 	margin-bottom: 10px;
 `;
 
@@ -20,18 +20,23 @@ const StyledName = styled.p`
 	color: white;
 `;
 
-const StyledFlag = styled.img``;
+const StyledFlag = styled.img`
+	height: 190px;
+`;
 
 const StyledPopulation = styled.p`
 	color: white;
+	font-family: 'Nunito Sans';
 `;
 
 const StyledRegion = styled.p`
 	color: white;
+	font-family: 'Nunito Sans';
 `;
 
 const StyledCapital = styled.p`
 	color: white;
+	font-family: 'Nunito Sans';
 `;
 
 export {

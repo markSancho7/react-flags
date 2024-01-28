@@ -1,10 +1,12 @@
+import { StyledDiv } from './styles';
+
 const Header = () => {
 	return (
 		<>
-			<div>
+			<StyledDiv>
 				<p>Where in the world</p>
 				<p>dark mode</p>
-			</div>
+			</StyledDiv>
 		</>
 	);
 };
